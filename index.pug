@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	link(rel="stylesheet", href="css/fonts.css")
+	link(rel="stylesheet", href="css/normalize.css")
+	link(rel="stylesheet", href="css/style.css")
+</head>
+body
+	.container
+		.header
+			.logo-text IC "Repair Design Project"
+			nav
+				ul.nav
+					li.active
+						a(href="#") Home
+					li
+						a(href="#") Projects
+					li
+						a(href="#") Measurements
+					li
+						a(href="#") Team
+					li
+						a(href="#") Reviews
+					li
+						a(href="#") Contacts
+			.contacts
+				span.phone +7 (928) 768-32-39
+				a.btn-request(href="#") Request a call
+		main
+			section.intro
+				aside.aside
+					a.aside__insta(href='#') &#8212&#8212&#8212
+				.intro__inner
+					.intro__bg
+					.intro__content
+						.intro__header
+							h1.intro__h1 Turnkey Repair in the city of
+								span.intro__h1.intro__n1--yellow  Rostov-on-Don
+						p.intro__text Get ready-made turnkey repairs on time with work time saving up to 45 days and 20% from cost of materials due to the organization of work
+						.app
+							a.app__btn1(href="") Calculate the cost
+							a.app__btn2(href="") Submit your application
+				.block-scroll-down
+					a(href="#completed") Scroll down
+			section.completed-proj#completed
+				.slider__inner
+					.slider__description
+						.gold-title Completed Projects &nbsp&nbsp&nbsp&#8212&#8212&#8212
+						.description-text Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families 
+						.slider__stats
+							.item.city
+								.title.small City
+								p Rostov-on-Don
+								p LCD admiral
+							.item
+								.title.small Apartment Area
+								p 81 m2
+							.item
+								.title.small Repair Time
+								p 3.5 months
+							.item
+								.title.small Repair Cost
+								p Upon request
+						.slider__controls
+							.arrow.arrow-bar.is-left
+							.indicators
+								.circle.active
+								.circle
+								.circle
+							.arrow.arrow-bar.is-right
+					.slider
+						.slider__header
+							.item.active Rostov-on-Don, Admiral
+							.item Sochi Thieves
+							.item Rostov-on-Don Patriotic
+						.slider__body
+							img.img_one(src="/img/rostov-on-don.png", alt="")
+							img.img_two(src="/img/sochi-thieves.png", alt="")
+			section.online-control
+				.oc__title Online control
+				.icon
+					img(src="/img/camera.svg", alt="")
+				iframe.yt-video(width="817px" height="434px" src="https://www.youtube.com/embed/yxviTLVjvDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+				hr
+				.black-text At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
+			section.form
+				form(action="/")
+					.form-inline
+						.form-block
+							label(for='name') Name
+							input#name(type='text' placeholder='What is your name:' name='name')
+						.form-block
+							label(for='phone') Phone
+							input#phone(type='tel' placeholder='Your phone number:' name='phone')
+						button.form__btn(type="submit") Submit
+					.block-agree
+						input(type="checkbox" checked="checked")
+						span I agree to the processing of personal data
+
+			section.types-of-repair
+				.tor__container
+					.black-title Types of repair
+					.icon
+						img(src="/img/tools.svg", alt="")
+					.tor__inner
+						.card
+							img(src="/img/img-1.png", alt="")
+							.card_description
+								.title Redecorating
+								ul
+									li Dismantling of old coatings
+									li Wallpapering
+									li Painting walls and ceilings
+									li Laying flooring
+									li Replacing plumbing
+									li Replacing sockets and switches
+									li Replacing doors
+								.price-tag
+									| from 900 rub / m2
+						.card
+							img(src="/img/img-2.png", alt="")
+							.card_description
+								.title Overhaul
+								ul
+									li Dismantling of old coatings
+									li Wallpapering
+									li Painting walls and ceilings
+									li Laying flooring
+									li Replacing plumbing
+									li Replacing sockets and switches
+									li Replacing doors
+								.price-tag
+									| from 1800 rub / m2 
+						.card
+							img(src="/img/img-3.png", alt="")
+							.card_description
+								.title Designer Repair
+								ul
+									li Dismantling of old coatings
+									li Wallpapering
+									li Painting walls and ceilings
+									li Laying flooring
+									li Replacing plumbing
+									li Replacing sockets and switches
+									li Replacing doors
+								.price-tag
+									| from 4000 rub / m2
+
+
+			section.features
+				.panel-left
+					.circle-big
+					.circle-one 01
+					p Our specialist will arrive for measurements per day contact, or appoint a date convenient for you
+					.circle-two 02
+					p Free metering 
+					.circle-three 03
+					p Free consultation
+					.circle-four 04
+					p Get a cost estimate and the timing of your future repairs
+				.panel-right
+					form(action="/")
+						.form-two
+							.title Leave a request and our manager will contact you shortly
+							.form-block
+								label(for='name') Name
+								input#name(type='text' placeholder='What is your name:' name='name')
+							.form-block
+								label(for='phone') Phone
+								input#phone(type='tel' placeholder='Your phone number:' name='phone')
+							.form-block
+								label(for='email') Email
+								input#phone(type='email' placeholder='Your email:' name='email')
+							.block-agree
+								input(type="checkbox" checked="checked")
+								span I agree to the processing of personal data
+							.form-block
+								button.form__btn(type="submit") Call the measurer 
+					.piglet
+						img(src="/img/piglet.svg", alt="")
+						p Help save 10 - 20% of the cost of materials 
+			section.proposals
+				.proposals_col1
+					.title We realize your wildest fantasies
+					ul
+						li.active American Classic
+						li Empire
+						li Classical
+						li Loft
+						li Minimalism
+						li Provence
+						li Romanticism
+						li Scandinavian style
+						li Mediterranean style
+						li High tech
+						li Eclecticism
+				.proposals_col2
+					img(src="img/proposal-1.png", alt="")
+					img(src="img/proposal-2.png", alt="")
+				.proposals_col3
+					img(src="img/proposal-3.png", alt="")
+					img(src="img/proposal-4.png", alt="")
+
+			section.design-proj
+				.black-title design project
+				.icon
+					img(src="/img/pen-n-ruler.svg", alt="")
+				.black-text Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.
+				.design-proj__inner
+					.card
+						img(src="/img/img-1.png", alt="")
+						.card_description
+							.title Mini
+							ul
+								li Measurement drawing
+								li Redevelopment
+								li Layout of furniture
+								li Plumbing plan. equipmen
+							.price-tag
+								| 150 rub / m2
+					.card
+						img(src="/img/img-2.png", alt="")
+						.card_description
+							.title Standard
+							ul
+								li Measurement drawing
+								li Redevelopment
+								li Layout of furniture
+								li Plan of ceilings
+								li Floor Plan
+								li Electricians plan
+								li Lighting plan 
+							.price-tag
+								| 400 rub / m2
+					.card
+						img(src="/img/img-3.png", alt="")
+						.card_description
+							.title Full
+							ul
+								li Measurement drawing
+								li Redevelopment
+								li Layout of furniture
+								li Plan of ceilings
+								li Floor Plan
+								li Electricians plan
+								li Lighting plan
+								li Wall reamers
+								li 3D visualization
+								li Bill of materials
+								li Departure for a selection of materials
+								li Furniture selection
+							.price-tag
+								| 900 rub / m2
+			section.process
+				.slider__inner
+					.slider__description
+						.suptitle How we are working
+						.gold-title 6 steps to the goal &nbsp&nbsp&nbsp&#8212&#8212&#8212
+						.slider__info
+							.no-title 1/6
+							.subtitle Departure for measurements premises
+							.description-text After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room. He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages. 
+						.slider__controls
+							.arrow.arrow-bar.is-left
+							.indicators
+								.circle.active
+								.circle
+								.circle
+								.circle
+								.circle
+								.circle
+							.arrow.arrow-bar.is-right
+					.slider
+						.slider__header.slider--process
+							.item
+								.h 01
+								p Departure to room measurements
+							.item
+								.h 02
+								p Compilation estimates 
+							.item
+								.h 03
+								p Development project design
+							.item
+								.h 04
+								p Purchasing Supplies
+							.item
+								.h 05
+								p Repair finishing work 
+							.item
+								.h 06
+								p Приемка-сдача работ 
+						.slider__body
+							img.img_one(src="/img/process-slider.png", alt="")
+
+			section.team
+				.white-title our team
+				.icon
+					img(src="/img/team.svg", alt="")
+				.white-text Our team has helped to become happier for more than 500 families and we are not going to stop
+				.team__inner
+					.card
+						.card__logo
+							img(src="/img/proj-manager.svg", alt="")
+						img(src="/img/employee-1.png", alt="")
+						.card_description.card--team
+							.title Dmitry tulyakov
+							.position Project Manager
+							.price-tag.exp-tag
+								| Work experience 8 years
+					.card
+						.card__logo
+							img(src="/img/designer.svg", alt="")
+						img(src="/img/employee-2.png", alt="")
+						.card_description.card--team
+							.title Larisa Kotlyarova
+							.position Designer
+							.price-tag.exp-tag
+								| Work experience 6 years 
+					.card
+						.card__logo
+							img(src="/img/foreman.svg", alt="")
+						img(src="/img/employee-3.png", alt="")
+						.card_description.card--team
+							.title Alexey Efimov
+							.position Foreman
+							.price-tag.exp-tag
+								| Work experience 12 years
+				hr
+				.black-text Each employee of our company is a qualified full-time specialist with work experience of 6 years. We do not have laborers and guest workers, each employee carries out work corresponding to his specialty
+
+			section.clients
+				.black-title our clients
+				.icon
+					img(src="/img/clients.svg", alt="")
+				.black-text 80% of our customers recommend us to their friends and family.
+				.clients__inner
+					.client-card
+						.cc-head
+							.card-photo
+								img(src="/img/client-1.png", alt="")
+							.client-name Fedosova Maria Konstantinovna
+						p  I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.
+						.client-bottom
+							img(src="/img/client-bottom.png", alt="")
+					.client-card
+						.cc-head
+							.card-photo
+								img(src="/img/client-2.png", alt="")
+							.client-name Afanasyev Sergey Alexandrovich
+						p I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.
+						.client-bottom
+							img(src="/img/client-bottom.png", alt="")
+					.client-card
+						.cc-head
+							.card-photo
+								img(src="/img/client-3.png", alt="")
+							.client-name Kiriev Egor Leonidovich
+						p I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH. THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.
+						.client-bottom
+							img(src="/img/client-bottom.png", alt="")
+
+			section.form-three
+					form(action="/")
+						.form-two.three
+							.title Have any questions?
+							.form-block
+								label(for='name') Name
+								input#name(type='text' placeholder='What is your name:' name='name')
+							.form-block
+								label(for='phone') Phone
+								input#phone(type='tel' placeholder='Your phone number:' name='phone')
+							.form-block
+								label(for='question') Question
+								input#phone(type='email' placeholder='Question:' name='question')
+							.block-agree
+								input(type="checkbox" checked="checked")
+								span I agree to the processing of personal data
+							.form-block
+								button.form__btn(type="submit") Call the measurer 
+
+			section.map
+				.map-title Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
+				.icon-contacts
+					img(src="/img/map-icon-1.png", alt="")
+					img(src="/img/map-icon-2.png", alt="")
+				.map_img
+					img(src="/img/map.png", alt="")
+
+			footer.footer
+				.logo-text IC "Repair Design Project"
+				nav
+					ul.nav
+						li.active
+							a(href="#") Home
+						li
+							a(href="#") Projects
+						li
+							a(href="#") Measurements
+						li
+							a(href="#") Team
+						li
+							a(href="#") Reviews
+						li
+							a(href="#") Contacts
+				.contacts
+					span.phone +7 (928) 768-32-39
+					a.btn-request(href="#") Request a call
+</html>
